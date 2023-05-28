@@ -24,6 +24,16 @@ int main()
 	} else {
 		val = atoi(card_name); //'atoi' converts the text into a number.
 	}
+	
 	printf("The card value is: %i\n", val);
+
+
+	/* Check if the value is 3 to 6 */
+	if (val >= 3 && val <= 6)
+		puts("Count has gone up");
+	/* Check if the value is 10, K, Q, or J */
+	else if (val == 10)
+		puts("Count has gone down");
+	//printf("The card value is: %i\n", val);
 	return 0;
 }
